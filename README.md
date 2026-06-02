@@ -49,14 +49,11 @@ regression/
 ├── README.md                              # Documentação principal do projeto
 ├── requirements.txt                       # Dependências e bibliotecas do projeto
 ├── main.py                                # Script principal/orquestrador do pipeline
-├── main_yellow_taxi_regression.ipynb      # Notebook original mantido na raiz
+├── yellow_taxi_regression.ipynb      # Notebook original mantido na raiz
 │
 ├── data/
 │   └── processed/
-│       └── 2017_Yellow_Taxi_Trip_Data.csv # Dataset local esperado para execução fora do Kaggle
-│
-├── notebooks/
-│   └── main_yellow_taxi_regression.ipynb  # Cópia do notebook original
+│       └── 2017_Yellow_Taxi_Trip_Data.csv
 │
 ├── src/                                   # Módulos de código-fonte
 │   ├── __init__.py                        # Inicialização do pacote Python
@@ -145,4 +142,3 @@ python main.py
 ## 📌 Observações / Notes
 *   O dataset não é versionado diretamente neste repositório por ser um arquivo externo do Kaggle.
 *   Os diretórios `models/` e `outputs/figures/` são utilizados para armazenar artefatos gerados durante a execução.
-*   O notebook original foi preservado, enquanto o código reutilizável foi extraído para módulos em `src/`.
