@@ -44,12 +44,12 @@ This repository contains the modularized version of the Machine Learning project
 O projeto foi estruturado seguindo a mesma organização modular do projeto de classificação HR Salifort Motors, separando o notebook exploratório do pipeline executável e dos módulos reutilizáveis:
 
 ```text
-regression/
+ML_regression_Yellow_Taxi/
 │
+├── yellow_taxi_regression.ipynb           # Notebook original mantido na raiz
 ├── README.md                              # Documentação principal do projeto
 ├── requirements.txt                       # Dependências e bibliotecas do projeto
 ├── main.py                                # Script principal/orquestrador do pipeline
-├── yellow_taxi_regression.ipynb      # Notebook original mantido na raiz
 │
 ├── data/
 │   └── processed/
