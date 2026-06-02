@@ -46,7 +46,7 @@ O projeto foi estruturado seguindo a mesma organização modular do projeto de c
 ```text
 ML_regression_Yellow_Taxi/
 │
-├── yellow_taxi_regression.ipynb           # Notebook original mantido na raiz
+├── yellow_taxi_regression.ipynb           # Notebook com o desenvolvimento, documentação e insights
 ├── README.md                              # Documentação principal do projeto
 ├── requirements.txt                       # Dependências e bibliotecas do projeto
 ├── main.py                                # Script principal/orquestrador do pipeline
