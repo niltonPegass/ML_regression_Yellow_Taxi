@@ -18,7 +18,7 @@ def prepare_modeling_data(df: pd.DataFrame):
 
     features = df_model.drop(config.TARGET_COLUMN, axis=1)
     target = df_model[config.TARGET_COLUMN]
-    print(f'feature columns:\n{features.columns.to_list()}')
+    # print(f'feature columns:\n{features.columns.to_list()}')
 
     x_train, x_test, y_train, y_test = train_test_split(
         features,
@@ -40,7 +40,7 @@ def get_models_and_grids() -> tuple:
         'Linear Regression': LinearRegression(),
         'HistGBR': HistGradientBoostingRegressor(random_state=config.RANDOM_STATE),
         'Decision Tree': DecisionTreeRegressor(random_state=config.RANDOM_STATE),
-        'Random Forest': RandomForestRegressor(random_state=config.RANDOM_STATE),
+        # 'Random Forest': RandomForestRegressor(random_state=config.RANDOM_STATE),
         'XGBoost': xgb.XGBRegressor(
             objective='reg:squarederror',
             random_state=config.RANDOM_STATE,
