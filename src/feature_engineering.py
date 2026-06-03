@@ -46,9 +46,12 @@ def day_period(row: pd.Series) -> str:
 def create_advanced_features(df: pd.DataFrame) -> pd.DataFrame:
     """Create rush-hour, day-period, route, and route-average features."""
     df = df.copy()
-    df['rush_hour'] = df.apply(rush_transformation, axis=1)
-    df['day_period'] = df.apply(day_period, axis=1)
+    print('>> Creating datetime, trip-duration, and base temporal features [...]')
     df['pickup_dropoff'] = df['PULocationID'].astype('str') + ' ' + df['DOLocationID'].astype('str')
+    print('>> Creating rush-hour feature [...]')
+    df['rush_hour'] = df.apply(rush_transformation, axis=1)
+    print('>> Creating day-period feature [...]')
+    df['day_period'] = df.apply(day_period, axis=1)
 
     for column in ['trip_distance', 'trip_duration']:
         grouped = df.groupby('pickup_dropoff').mean(numeric_only=True)[[column]].round(4)
