@@ -44,7 +44,7 @@ def evaluate_models(best_models: dict, x_train_scaled, x_test_scaled, y_train, y
             best_score = test_metrics['R2']
             best_model_name = name
 
-    print(f">> Best model: {best_model_name} with R2 = {best_score:.4f}\n")
+    print(f">> Best model: {best_model_name} with R2 = {best_score:.4f}")
     return best_model_name, best_models[best_model_name]
 
 
