@@ -30,7 +30,7 @@ def main():
     print('Base features created successfully')
 
     print('\n' + '=' * 50)
-    print('STEP 3: EXPLORATORY DATA ANALYSIS')
+    print('STEP 3: EXPLORATORY DATA ANALYSIS (EDA)')
     print('=' * 50)
     run_eda(df, save_dir=config.OUTPUT_DIR)
 
